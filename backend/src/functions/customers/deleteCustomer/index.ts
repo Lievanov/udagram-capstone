@@ -6,7 +6,9 @@ export default {
     {
       http: {
         method: 'delete',
-        path: 'customers/{customerId}'
+        path: 'customers/{customerId}',
+        authorizer: 'Auth',
+        cors: true
       }
     }
   ],

@@ -8,6 +8,8 @@ export default {
       http: {
         method: 'post',
         path: 'customers',
+        authorizer: 'Auth',
+        cors: true,
         request: {
           schema: {
             'application/json': schema

@@ -6,7 +6,9 @@ export default {
     {
       http: {
         method: 'get',
-        path: 'customers'
+        path: 'customers',
+        authorizer: 'Auth',
+        cors: true
       }
     }
   ],

@@ -7,6 +7,8 @@ import updateCustomer from '@functions/customers/updateCustomer'
 
 import getUploadUrl from '@functions/attachments'
 
+import Auth from '@functions/auth'
+
 import CustomersTable from '@resources/dynamodb/customersTable'
 
 import ImagesBucket from '@resources/s3/imagesBucket'
@@ -47,6 +49,7 @@ const serverlessConfiguration: AWS = {
   },
   // import the function via paths
   functions: { 
+    Auth,
     getCustomersByUserId,
     createCustomer,
     deleteCustomer,

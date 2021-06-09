@@ -8,6 +8,8 @@ export default {
       http: {
         method: 'patch',
         path: 'customers/{customerId}',
+        authorizer: 'Auth',
+        cors: true,
         request: {
           schema: {
             'application/json': schema

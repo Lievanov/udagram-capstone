@@ -6,7 +6,9 @@ export default {
     {
       http: {
         method: 'post',
-        path: 'customers/{customerId}/attachment'
+        path: 'customers/{customerId}/attachment',
+        authorizer: 'Auth',
+        cors: true
       }
     }
   ],

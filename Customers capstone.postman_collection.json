@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "4a1eaee3-9e33-4fb8-8f0f-5784883d7e82",
+		"name": "Customers capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "get Customers By User id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/customers",
+							"protocol": "https",
+							"host": [
+								"{{apiId}}",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Alejandro Alvarado\",\n    \"age\": 29\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/customers",
+							"protocol": "https",
+							"host": [
+								"{{apiId}}",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://9d4vek24yl.execute-api.us-east-1.amazonaws.com/dev/customers/1",
+							"protocol": "https",
+							"host": [
+								"9d4vek24yl",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Attachment URL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/customers/1/attachment",
+							"protocol": "https",
+							"host": [
+								"{{apiId}}",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"customers",
+								"1",
+								"attachment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Alejandro Alvarado\",\n    \"age\": 29,\n    \"notes\": \"lorem ipsum etc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/customers/1",
+							"protocol": "https",
+							"host": [
+								"{{apiId}}",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkxtODFIU01fdmFfTGZmUVZydnJQdSJ9.eyJpc3MiOiJodHRwczovL2FrYXB1dC51cy5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NjBiMmMyOGJlMjAwY2IwMDcwOTc5MDM4IiwiYXVkIjoiNlR5dHAyZG5CenNyOWFReGpJUHF5Wk5QTVVNR2xTQ3IiLCJpYXQiOjE2MjMyMTE0NjksImV4cCI6MTYyMzY0MzQ2OCwiYXRfaGFzaCI6Imo5bnN1WHQwVzJMaFUtUHp1ZTM1ZGciLCJub25jZSI6IkFPT2NJMjlfRlRHfkF1QTBHNzRFUThZNGlmSjBqOVM4In0.FJjp57o4qchFf2i_K3GB2Pd8YNfkQpnmExx9WEcZxLZZ0SkRva1c_0Snhql984HpqbUNR22hvD8P0l2UNuI7jDi8TqRJX6GLoiZ2cFA1cbEx_aVJMMHagG0bb40uDLlo5vPZZQC1gzVD6m8lRi8An0ikA8FIFcg3MnnPiGw5xDziGbkUCYjEuaP0QJ718RTH9jF4CuSvm0pp_r9Ut322qXNSDuze7mBDlwgu-BdWZFUGOXMcZ8WNSjqBT1gBV-HM6UXhIGDSbW3OU95aJJCx3TW4_8Jm95XBlxx9oxM4AFTnkrXrHPOGFNjlwvV6Nnh1CpmHMOtLDxQSiyolIV0k4A",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apiId",
+			"value": ""
+		},
+		{
+			"key": "authToken",
+			"value": ""
+		}
+	]
+}
